@@ -1,0 +1,70 @@
+@import url(./node_modules/xp.css/dist/XP.css);
+
+body {
+  background-image: url(./assets/background.jpg);
+  color: whitesmoke;
+}
+
+.card {
+  width: 100px;
+  --bs-card-bg: none;
+  --bs-card-border-width: none;
+  --bs-card-spacer-y: none;
+  --bs-card-spacer-x: none;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.desktopIcons {
+  max-width: 300px;
+  margin-left: 0px;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0rem;
+  --bs-navbar-brand-padding-y: 0rem;
+  --bs-navbar-brand-margin-end: 0rem;
+  background-image: url(./assets/bar-length.jpg);
+}
+
+.startBar {
+  --bs-gutter-x: 0px;
+  margin-left: 0px;
+}
+
+.card-img-top {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 0;
+  color: black;
+}
+
+.modal {
+  --bs-modal-width: 900px;
+}
+
+.window {
+  height: 500px;
+  font-size: small;
+}
+
+.clock {
+  position: absolute;
+  right: 40px;
+  font-size: large;
+}
+
+.video-embed {
+  height: 400px;
+}
+
+.title-bar {
+  height: 30px;
+}
+
+@media (max-width: 425px) {
+  .window {
+    font-size: xx-small;
+  }
+}
