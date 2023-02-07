@@ -29,6 +29,10 @@ body {
   margin-left: 0px;
 }
 
+.startBar img {
+  vertical-align: bottom;
+}
+
 .card-img-top {
   cursor: pointer;
 }
@@ -58,8 +62,8 @@ body {
 
 .clock {
   position: absolute;
-  right: 40px;
-  font-size: large;
+  right: 28px;
+  font-size: small;
 }
 
 .video-embed {
@@ -76,6 +80,7 @@ body {
   }
 
   .card {
-    width: 50px;
+    width: 40px;
+    font-size: x-small;
   }
 }
