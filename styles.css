@@ -31,9 +31,8 @@ body {
 
 .card-img-top {
   cursor: pointer;
-  /* width: 75px;
-  height: 75px; */
 }
+
 .card {
   width: 75px;
 }
@@ -74,5 +73,9 @@ body {
 @media (max-width: 425px) {
   .window {
     font-size: xx-small;
+  }
+
+  .card {
+    width: 50px;
   }
 }
