@@ -36,3 +36,17 @@ function openTab(event, tab) {
   );
   article.removeAttribute("hidden");
 }
+
+function ShowDiv() {
+  document.getElementById("startMenu").style.width = "300px";
+  document.getElementById("startMenu").style.display = "block";
+  document.getElementById("startMenu").style.position = "absolute";
+  document.getElementById("show").style.display = "none";
+  document.getElementById("hide").style.display = "block";
+}
+
+function HideDiv() {
+  document.getElementById("startMenu").style.display = "none";
+  document.getElementById("hide").style.display = "none";
+  document.getElementById("show").style.display = "block";
+}

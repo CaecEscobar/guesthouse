@@ -22,11 +22,45 @@
   </head>
 
   <body onload="startTime()">
+    <!-- <progress max="100" value="70"></progress> -->
     <header>
+      <div id="startMenu" class="window start-menu" style="display: none">
+        <div class="title-bar start-menu-title-bar">
+          <img src="./assets/skateicon.jpg" alt="" />
+          <div class="title-bar-text">Guest House</div>
+        </div>
+        <div class="window-body container">
+          <div class="vl"></div>
+          <div class="row">
+            <div class="col left-col">
+              <div class="start-menu-item">
+                <a href="">
+                  <img src="./assets/logo-apps-instagram.png" alt="" />
+                  <strong>Internet</strong>
+                </a>
+              </div>
+            </div>
+            <div class="col right-col">
+              <div class="start-menu-item">
+                <a href="">
+                  <img src="./assets/logo-apps-spotify.png" alt="" />
+                  <strong>Spotify</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid startBar">
           <a class="navbar-brand" href="#">
-            <img src="./assets/bar-start.jpg" alt="" />
+            <img src="./assets/bar-start.jpg" id="show" onclick="ShowDiv()" />
+            <img
+              src="./assets/bar-start-pressed.jpg"
+              id="hide"
+              style="display: none"
+              onclick="HideDiv()"
+            />
           </a>
           <li class="clock" id="txt">
             <script>
@@ -965,7 +999,7 @@
                       <div class="row">
                         <iframe
                           class="video-embed"
-                          src="https://www.youtube.com/embed/qJXppmVgWCE"
+                          src="https://www.youtube.com/embed/GnJHfR4P3Ug"
                           frameborder="0"
                           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                           allowfullscreen
