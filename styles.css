@@ -154,6 +154,16 @@ menu[role="tablist"] button {
   padding: 5px;
 }
 
+#webamp div {
+  box-shadow: none !important;
+}
+
+#equalizer-window div {
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0px !important;
+}
+
 @media (max-width: 650px) {
   .imgH {
     width: 380px;
