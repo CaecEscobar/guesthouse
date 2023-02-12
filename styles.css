@@ -69,6 +69,15 @@ a:active {
   font-size: small;
 }
 
+#startMenu {
+  margin: 0px;
+  padding: 0px;
+}
+
+#startMenu-row {
+  margin: 0px;
+}
+
 .clock {
   position: absolute;
   right: 28px;
@@ -130,6 +139,31 @@ a:active {
 
 .start-menu-item:hover {
   background-color: rgb(66, 130, 214);
+}
+
+.imgH {
+  width: 580px;
+}
+
+.imgV {
+  width: 260px;
+}
+
+menu[role="tablist"] button {
+  max-width: auto;
+  padding: 5px;
+}
+
+@media (max-width: 650px) {
+  .imgH {
+    width: 380px;
+  }
+}
+
+@media (max-width: 445px) {
+  .imgH {
+    width: 240px;
+  }
 }
 
 @media (max-width: 425px) {

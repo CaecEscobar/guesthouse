@@ -22,32 +22,52 @@
   </head>
 
   <body onload="startTime()">
-    <!-- <progress max="100" value="70"></progress> -->
     <header>
       <div id="startMenu" class="window start-menu" style="display: none">
         <div class="title-bar start-menu-title-bar">
           <img src="./assets/skateicon.jpg" alt="" />
           <div class="title-bar-text">Guest House</div>
         </div>
-        <div class="window-body container">
+        <div id="startMenu" class="window-body container">
           <div class="vl"></div>
-          <div class="row">
-            <div class="col left-col">
-              <div class="start-menu-item">
-                <a href="">
-                  <img src="./assets/logo-apps-instagram.png" alt="" />
-                  <strong>Internet</strong>
-                </a>
-              </div>
-            </div>
-            <div class="col right-col">
+          <div id="startMenu-row" class="row">
+            <div class="col">
               <div class="start-menu-item">
                 <a href="">
                   <img src="./assets/logo-apps-spotify.png" alt="" />
                   <strong>Spotify</strong>
                 </a>
               </div>
+              <div class="start-menu-item">
+                <a href="">
+                  <img src="./assets/logo-apps-applemusic.png" alt="" />
+                  <strong>Apple Music</strong>
+                </a>
+              </div>
+              <div class="start-menu-item">
+                <a href="">
+                  <img src="./assets/logo-apps-youtube.png" alt="" />
+                  <strong>Youtube</strong>
+                </a>
+              </div>
+              <div class="start-menu-item">
+                <a href="">
+                  <img src="./assets/logo-apps-instagram.png" alt="" />
+                  <strong>Instagram</strong>
+                </a>
+              </div>
+              <div class="start-menu-item">
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#imagenesModal"
+                >
+                  <img src="./assets/win-images.png" alt="" />
+                  <strong>Imágenes</strong>
+                </a>
+              </div>
             </div>
+            <div class="col"></div>
           </div>
         </div>
       </div>
@@ -307,6 +327,22 @@
               </a>
               <div class="card-body">
                 <p class="card-text">Instagram</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col icons">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="./assets/win-images.png"
+                alt="Title"
+                data-bs-toggle="modal"
+                data-bs-target="#imagenesModal"
+              />
+              <div class="card-body">
+                <p class="card-text">Imágenes</p>
               </div>
             </div>
           </div>
@@ -1005,6 +1041,83 @@
                           allowfullscreen
                         ></iframe>
                       </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal"
+          id="imagenesModal"
+          tabindex="-1"
+          data-bs-backdrop="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="window">
+                  <div class="title-bar">
+                    <div class="title-bar-text">Don't Go</div>
+                    <div class="title-bar-controls">
+                      <button
+                        aria-label="Close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                  </div>
+                  <div class="window-body">
+                    <menu role="tablist">
+                      <button aria-selected="true" aria-controls="IMG1">
+                        gh
+                      </button>
+                      <button aria-controls="IMG2">caec</button>
+                      <button aria-controls="IMG3">leo</button>
+                      <button aria-controls="IMG4">andree</button>
+                      <button aria-controls="IMG5">lucio</button>
+                      <button aria-controls="IMG6">nolee</button>
+                    </menu>
+                    <article role="tabpanel" id="IMG1">
+                      <img
+                        class="imgH mx-auto d-block"
+                        src="./assets/gh-pics/gh-1.jpg"
+                      />
+                    </article>
+                    <article role="tabpanel" hidden id="IMG2">
+                      <img
+                        class="imgH mx-auto d-block"
+                        src="./assets/gh-pics/gh-2.jpg"
+                        alt=""
+                      />
+                    </article>
+                    <article role="tabpanel" hidden id="IMG3">
+                      <img
+                        class="imgH mx-auto d-block"
+                        src="./assets/gh-pics/gh-3.jpg"
+                        alt=""
+                      />
+                    </article>
+                    <article role="tabpanel" hidden id="IMG4">
+                      <img
+                        class="imgV mx-auto d-block"
+                        src="./assets/gh-pics/gh-4.jpg"
+                        alt=""
+                      />
+                    </article>
+                    <article role="tabpanel" hidden id="IMG5">
+                      <img
+                        class="imgV mx-auto d-block"
+                        src="./assets/gh-pics/gh-5.jpg"
+                        alt=""
+                      />
+                    </article>
+                    <article role="tabpanel" hidden id="IMG6">
+                      <img
+                        class="imgH mx-auto d-block"
+                        src="./assets/gh-pics/gh-6.jpg"
+                        alt=""
+                      />
                     </article>
                   </div>
                 </div>
