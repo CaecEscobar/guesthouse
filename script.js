@@ -61,7 +61,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "Selfless",
         },
-        url: "/assets/music/01_guest_house_selfless_master.mp3",
+        url: "./assets/music/01_guest_house_selfless_master.mp3",
         duration: 5.322286,
       },
       {
@@ -69,7 +69,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "By Myself",
         },
-        url: "/assets/music/02_guest_house_by_myself_master.mp3",
+        url: "./assets/music/02_guest_house_by_myself_master.mp3",
         duration: 5.322286,
       },
       {
@@ -77,7 +77,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "No Longer Human",
         },
-        url: "/assets/music/03_guest_house_no_longer_human_master.mp3",
+        url: "./assets/music/03_guest_house_no_longer_human_master.mp3",
         duration: 5.322286,
       },
       {
@@ -85,7 +85,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "Glass Cannon '97",
         },
-        url: "/assets/music/04_guest_house_glass_cannon_master.mp3",
+        url: "./assets/music/04_guest_house_glass_cannon_master.mp3",
         duration: 5.322286,
       },
       {
@@ -93,7 +93,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "One Day",
         },
-        url: "/assets/music/05_guest_house_one_day_master.mp3",
+        url: "./assets/music/05_guest_house_one_day_master.mp3",
         duration: 5.322286,
       },
       {
@@ -101,7 +101,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "Like Me",
         },
-        url: "/assets/music/06_guest_house_like_me_master.mp3",
+        url: "./assets/music/06_guest_house_like_me_master.mp3",
         duration: 5.322286,
       },
       {
@@ -109,7 +109,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "I Shall Be Nothing",
         },
-        url: "/assets/music/07_guest_house_i_shall_be_nothing_master.mp3",
+        url: "./assets/music/07_guest_house_i_shall_be_nothing_master.mp3",
         duration: 5.322286,
       },
       {
@@ -117,7 +117,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "New Self",
         },
-        url: "/assets/music/08_guest_house_new_self_master.mp3",
+        url: "./assets/music/08_guest_house_new_self_master.mp3",
         duration: 5.322286,
       },
       {
@@ -125,7 +125,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "Guest House",
         },
-        url: "/assets/music/09_guest_house_guest_house_master.mp3",
+        url: "./assets/music/09_guest_house_guest_house_master.mp3",
         duration: 5.322286,
       },
       {
@@ -133,7 +133,7 @@ function ShowWinamp() {
           artist: "Guest House",
           title: "Don't Go",
         },
-        url: "/assets/music/10_guest_house_dont_go_master.mp3",
+        url: "./assets/music/10_guest_house_dont_go_master.mp3",
         duration: 5.322286,
       },
     ],
