@@ -164,6 +164,10 @@ menu[role="tablist"] button {
   padding: 0px !important;
 }
 
+.startWinamp {
+  cursor: pointer;
+}
+
 @media (max-width: 650px) {
   .imgH {
     width: 380px;

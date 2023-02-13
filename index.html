@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="xp.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body onload="startTime()">
@@ -65,6 +65,10 @@
                   <strong>Imágenes</strong>
                 </a>
               </div>
+              <div class="start-menu-item startWinamp" onclick="ShowWinamp()">
+                <img src="./assets/logo-apps-winamp.png" alt="" />
+                <strong>Winamp</strong>
+              </div>
             </div>
             <div class="col"></div>
           </div>
@@ -107,8 +111,7 @@
       </nav>
     </header>
     <main>
-      <div id="app" style="position: absolute">
-        <!-- Webamp will attempt to center itself within this div -->
+      <!-- <div id="app">
       </div>
       <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
       <script>
@@ -139,7 +142,15 @@
 
         // Returns a promise indicating when it's done loading.
         webamp.renderWhenReady(document.getElementById("app"));
-      </script>
+      </script> -->
+
+      <div
+        id="app"
+        class="position-absolute top-50 start-50 translate-middle"
+      ></div>
+      <script src="./js/webamp.js"></script>
+      <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
+      <script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
 
       <div class="container desktopIcons">
         <div class="row">
@@ -376,6 +387,19 @@
               />
               <div class="card-body">
                 <p class="card-text">Imágenes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col icons">
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="./assets/logo-apps-winamp.png"
+                alt="Title"
+                onclick="ShowWinamp()"
+              />
+              <div class="card-body">
+                <p class="card-text">Winamp</p>
               </div>
             </div>
           </div>
