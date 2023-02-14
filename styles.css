@@ -64,6 +64,14 @@ a:active {
   --bs-modal-width: 900px;
 }
 
+#errorModal {
+  --bs-modal-width: 300px;
+}
+
+#errorModal .window {
+  height: 130px;
+}
+
 .window {
   height: 500px;
   font-size: small;
@@ -166,6 +174,10 @@ menu[role="tablist"] button {
 
 .startWinamp {
   cursor: pointer;
+}
+
+.progreso {
+  width: 280px;
 }
 
 @media (max-width: 650px) {

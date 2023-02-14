@@ -56,14 +56,14 @@ function ShowWinamp() {
   const app = document.getElementById("app");
   const webamp = new Webamp({
     initialTracks: [
-      {
-        metaData: {
-          artist: "Guest House",
-          title: "Selfless",
-        },
-        url: "./assets/music/01_guest_house_selfless_master.mp3",
-        duration: 5.322286,
-      },
+      // {
+      //   metaData: {
+      //     artist: "Guest House",
+      //     title: "Selfless",
+      //   },
+      //   url: "./assets/music/01_guest_house_selfless_master.mp3",
+      //   duration: 5.322286,
+      // },
       {
         metaData: {
           artist: "Guest House",
@@ -72,14 +72,14 @@ function ShowWinamp() {
         url: "./assets/music/02_guest_house_by_myself_master.mp3",
         duration: 5.322286,
       },
-      {
-        metaData: {
-          artist: "Guest House",
-          title: "No Longer Human",
-        },
-        url: "./assets/music/03_guest_house_no_longer_human_master.mp3",
-        duration: 5.322286,
-      },
+      // {
+      //   metaData: {
+      //     artist: "Guest House",
+      //     title: "No Longer Human",
+      //   },
+      //   url: "./assets/music/03_guest_house_no_longer_human_master.mp3",
+      //   duration: 5.322286,
+      // },
       {
         metaData: {
           artist: "Guest House",
@@ -96,14 +96,14 @@ function ShowWinamp() {
         url: "./assets/music/05_guest_house_one_day_master.mp3",
         duration: 5.322286,
       },
-      {
-        metaData: {
-          artist: "Guest House",
-          title: "Like Me",
-        },
-        url: "./assets/music/06_guest_house_like_me_master.mp3",
-        duration: 5.322286,
-      },
+      // {
+      //   metaData: {
+      //     artist: "Guest House",
+      //     title: "Like Me",
+      //   },
+      //   url: "./assets/music/06_guest_house_like_me_master.mp3",
+      //   duration: 5.322286,
+      // },
       {
         metaData: {
           artist: "Guest House",
@@ -120,22 +120,22 @@ function ShowWinamp() {
         url: "./assets/music/08_guest_house_new_self_master.mp3",
         duration: 5.322286,
       },
-      {
-        metaData: {
-          artist: "Guest House",
-          title: "Guest House",
-        },
-        url: "./assets/music/09_guest_house_guest_house_master.mp3",
-        duration: 5.322286,
-      },
-      {
-        metaData: {
-          artist: "Guest House",
-          title: "Don't Go",
-        },
-        url: "./assets/music/10_guest_house_dont_go_master.mp3",
-        duration: 5.322286,
-      },
+      // {
+      //   metaData: {
+      //     artist: "Guest House",
+      //     title: "Guest House",
+      //   },
+      //   url: "./assets/music/09_guest_house_guest_house_master.mp3",
+      //   duration: 5.322286,
+      // },
+      // {
+      //   metaData: {
+      //     artist: "Guest House",
+      //     title: "Don't Go",
+      //   },
+      //   url: "./assets/music/10_guest_house_dont_go_master.mp3",
+      //   duration: 5.322286,
+      // },
     ],
     __butterchurnOptions: {
       importButterchurn: () => Promise.resolve(window.butterchurn),
@@ -161,8 +161,147 @@ function ShowWinamp() {
   webamp.renderWhenReady(app);
 }
 
-// function HideWinamp() {
-//   document.getElementById("startMenu").style.display = "none";
-//   document.getElementById("hide").style.display = "none";
-//   document.getElementById("show").style.display = "block";
+$(document).ready(function () {
+  var url = $("#video-frame-1").attr("src");
+
+  $("#selflessModal").on("hide.bs.modal", function () {
+    $("#video-frame-1").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#selflessModal").on("shown.bs.modal", function () {
+    $("#video-frame-1").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-2").attr("src");
+
+  $("#bymyselfModal").on("hide.bs.modal", function () {
+    $("#video-frame-2").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#bymyselfModal").on("shown.bs.modal", function () {
+    $("#video-frame-2").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-3").attr("src");
+
+  $("#nolongerhumanModal").on("hide.bs.modal", function () {
+    $("#video-frame-3").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#nolongerhumanModal").on("shown.bs.modal", function () {
+    $("#video-frame-3").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-4").attr("src");
+
+  $("#glasscannonModal").on("hide.bs.modal", function () {
+    $("#video-frame-4").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#glasscannonModal").on("shown.bs.modal", function () {
+    $("#video-frame-4").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-5").attr("src");
+
+  $("#onedayModal").on("hide.bs.modal", function () {
+    $("#video-frame-5").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#onedayModal").on("shown.bs.modal", function () {
+    $("#video-frame-5").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-6").attr("src");
+
+  $("#likemeModal").on("hide.bs.modal", function () {
+    $("#video-frame-6").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#likemeModal").on("shown.bs.modal", function () {
+    $("#video-frame-6").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-7").attr("src");
+
+  $("#nothingModal").on("hide.bs.modal", function () {
+    $("#video-frame-7").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#nothingModal").on("shown.bs.modal", function () {
+    $("#video-frame-7").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-8").attr("src");
+
+  $("#newselfModal").on("hide.bs.modal", function () {
+    $("#video-frame-8").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#newselfModal").on("shown.bs.modal", function () {
+    $("#video-frame-8").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-9").attr("src");
+
+  $("#guesthouseModal").on("hide.bs.modal", function () {
+    $("#video-frame-9").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#guesthouseModal").on("shown.bs.modal", function () {
+    $("#video-frame-9").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+$(document).ready(function () {
+  var url = $("#video-frame-10").attr("src");
+
+  $("#dontgoModal").on("hide.bs.modal", function () {
+    $("#video-frame-10").attr("src", "");
+    console.log("Unloaded");
+  });
+
+  $("#dontgoModal").on("shown.bs.modal", function () {
+    $("#video-frame-10").attr("src", url);
+    console.log("Loaded");
+  });
+});
+
+// function download() {
+//   // document.getElementsByClassName("progreso").value = 30;
+//   document.getElementsById("progreso").setAttribute("width", "1000px");
 // }
