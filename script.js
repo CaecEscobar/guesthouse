@@ -56,14 +56,14 @@ function ShowWinamp() {
   const app = document.getElementById("app");
   const webamp = new Webamp({
     initialTracks: [
-      // {
-      //   metaData: {
-      //     artist: "Guest House",
-      //     title: "Selfless",
-      //   },
-      //   url: "./assets/music/01_guest_house_selfless_master.mp3",
-      //   duration: 5.322286,
-      // },
+      {
+        metaData: {
+          artist: "Guest House",
+          title: "Selfless",
+        },
+        url: "./assets/music/01_guest_house_selfless_master.mp3",
+        duration: 5.322286,
+      },
       {
         metaData: {
           artist: "Guest House",
@@ -72,14 +72,14 @@ function ShowWinamp() {
         url: "./assets/music/02_guest_house_by_myself_master.mp3",
         duration: 5.322286,
       },
-      // {
-      //   metaData: {
-      //     artist: "Guest House",
-      //     title: "No Longer Human",
-      //   },
-      //   url: "./assets/music/03_guest_house_no_longer_human_master.mp3",
-      //   duration: 5.322286,
-      // },
+      {
+        metaData: {
+          artist: "Guest House",
+          title: "No Longer Human",
+        },
+        url: "./assets/music/03_guest_house_no_longer_human_master.mp3",
+        duration: 5.322286,
+      },
       {
         metaData: {
           artist: "Guest House",
@@ -96,14 +96,14 @@ function ShowWinamp() {
         url: "./assets/music/05_guest_house_one_day_master.mp3",
         duration: 5.322286,
       },
-      // {
-      //   metaData: {
-      //     artist: "Guest House",
-      //     title: "Like Me",
-      //   },
-      //   url: "./assets/music/06_guest_house_like_me_master.mp3",
-      //   duration: 5.322286,
-      // },
+      {
+        metaData: {
+          artist: "Guest House",
+          title: "Like Me",
+        },
+        url: "./assets/music/06_guest_house_like_me_master.mp3",
+        duration: 5.322286,
+      },
       {
         metaData: {
           artist: "Guest House",
@@ -120,22 +120,22 @@ function ShowWinamp() {
         url: "./assets/music/08_guest_house_new_self_master.mp3",
         duration: 5.322286,
       },
-      // {
-      //   metaData: {
-      //     artist: "Guest House",
-      //     title: "Guest House",
-      //   },
-      //   url: "./assets/music/09_guest_house_guest_house_master.mp3",
-      //   duration: 5.322286,
-      // },
-      // {
-      //   metaData: {
-      //     artist: "Guest House",
-      //     title: "Don't Go",
-      //   },
-      //   url: "./assets/music/10_guest_house_dont_go_master.mp3",
-      //   duration: 5.322286,
-      // },
+      {
+        metaData: {
+          artist: "Guest House",
+          title: "Guest House",
+        },
+        url: "./assets/music/09_guest_house_guest_house_master.mp3",
+        duration: 5.322286,
+      },
+      {
+        metaData: {
+          artist: "Guest House",
+          title: "Don't Go",
+        },
+        url: "./assets/music/10_guest_house_dont_go_master.mp3",
+        duration: 5.322286,
+      },
     ],
     __butterchurnOptions: {
       importButterchurn: () => Promise.resolve(window.butterchurn),

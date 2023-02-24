@@ -140,7 +140,7 @@
                 src="./assets/logo-selfless.png"
                 alt="Title"
                 data-bs-toggle="modal"
-                data-bs-target="#errorModal"
+                data-bs-target="#selflessModal"
               />
               <div class="card-body">
                 <p class="card-text">Selfless</p>
@@ -170,7 +170,7 @@
                 src="./assets/logo-nlhuman.png"
                 alt="Title"
                 data-bs-toggle="modal"
-                data-bs-target="#errorModal"
+                data-bs-target="#nolongerhumanModal"
               />
               <div class="card-body">
                 <p class="card-text">No Longer Human</p>
@@ -214,7 +214,7 @@
                 src="./assets/logo-likeme.png"
                 alt="Title"
                 data-bs-toggle="modal"
-                data-bs-target="#errorModal"
+                data-bs-target="#likemeModal"
               />
               <div class="card-body">
                 <p class="card-text">Like Me</p>
@@ -260,7 +260,7 @@
                 src="./assets/logo-guesthouse.png"
                 alt="Title"
                 data-bs-toggle="modal"
-                data-bs-target="#errorModal"
+                data-bs-target="#guesthouseModal"
               />
               <div class="card-body">
                 <p class="card-text">Guest House</p>
@@ -274,7 +274,7 @@
                 src="./assets/logo-dontgo.png"
                 alt="Title"
                 data-bs-toggle="modal"
-                data-bs-target="#errorModal"
+                data-bs-target="#dontgoModal"
               />
               <div class="card-body">
                 <p class="card-text">Don't Go</p>
@@ -453,77 +453,76 @@
           </div>
         </div>
         <div
-          class="modal"
-          id="bymyselfModal"
-          tabindex="-1"
-          data-bs-backdrop="false"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="window">
-                  <div class="title-bar">
-                    <div class="title-bar-text">By Myself</div>
-                    <div class="title-bar-controls">
-                      <button
-                        aria-label="Close"
-                        data-bs-dismiss="modal"
-                      ></button>
+        class="modal"
+        id="bymyselfModal"
+        tabindex="-1"
+        data-bs-backdrop="false"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="window">
+                <div class="title-bar">
+                  <div class="title-bar-text">By Myself</div>
+                  <div class="title-bar-controls">
+                    <button
+                      aria-label="Close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                </div>
+                <div class="window-body">
+                  <menu role="tablist">
+                    <button aria-selected="true" aria-controls="video">
+                      Video
+                    </button>
+                    <button aria-controls="lyrics">Lyrics</button>
+                  </menu>
+                  <article role="tabpanel" hidden id="lyrics">
+                    <div class="row">
+                      <p class="row">
+                        oh no please / take me out / from this darkness / I
+                        can’t escape from / my reality
+                        <strong
+                          >/ this place feels so cold / something is missing
+                          (in my mind) / one more who cares? / I need to
+                          escape (from this place) /</strong
+                        >
+                        even if I need to do it by myself
+                        <strong
+                          >/ this place feels so cold / something is missing
+                          (in my mind) / one more who cares / I need to escape
+                          (from this place) /</strong
+                        >
+                        even if I manage to escape / what’s going to be the
+                        next step? / maybe I’ll change myself / but I don’t
+                        think that’s the answer / maybe I need to change what
+                        I do / can you please give me a clue? / ’cause I don’t
+                        feel human anymore / I can’t see myself as a man / one
+                        day I’ll be in that place in my head / so please don’t
+                        go and don’t give up on me / because maybe one day /
+                        maybe one day I’ll give up /
+                      </p>
                     </div>
-                  </div>
-                  <div class="window-body">
-                    <menu role="tablist">
-                      <button aria-selected="true" aria-controls="video">
-                        Video
-                      </button>
-                      <button aria-controls="lyrics">Lyrics</button>
-                    </menu>
-                    <article role="tabpanel" hidden id="lyrics">
-                      <div class="row">
-                        <p class="row">
-                          oh no please / take me out / from this darkness / I
-                          can’t escape from / my reality
-                          <strong
-                            >/ this place feels so cold / something is missing
-                            (in my mind) / one more who cares? / I need to
-                            escape (from this place) /</strong
-                          >
-                          even if I need to do it by myself
-                          <strong
-                            >/ this place feels so cold / something is missing
-                            (in my mind) / one more who cares / I need to escape
-                            (from this place) /</strong
-                          >
-                          even if I manage to escape / what’s going to be the
-                          next step? / maybe I’ll change myself / but I don’t
-                          think that’s the answer / maybe I need to change what
-                          I do / can you please give me a clue? / ’cause I don’t
-                          feel human anymore / I can’t see myself as a man / one
-                          day I’ll be in that place in my head / so please don’t
-                          go and don’t give up on me / because maybe one day /
-                          maybe one day I’ll give up /
-                        </p>
-                      </div>
-                    </article>
-                    <article role="tabpanel" id="video">
-                      <div class="row">
-                        <iframe
-                          id="video-frame"
-                          class="video-embed-2"
-                          id="video-frame"
-                          src="https://www.youtube.com/embed/eGMQOP_OngU"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
-                    </article>
-                  </div>
+                  </article>
+                  <article role="tabpanel" id="video">
+                    <div class="row">
+                      <iframe
+                        class="video-embed"
+                        id="video-frame-2"
+                        src="https://www.youtube.com/embed/eGMQOP_OngU"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </article>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
         <div
           class="modal"
           id="nolongerhumanModal"
